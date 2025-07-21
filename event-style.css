@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  #colorBox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 5px;
+  }
+  

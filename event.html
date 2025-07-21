@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Listener Demo</title>
+</head>
+<body>
+
+  <h2>Click the Button to See a Message</h2>
+  
+  <button id="showBtn">Click Me</button>
+  
+  <p id="message"></p>
+
+  <script>
+    // Get reference to the button element
+    const button = document.getElementById("showBtn");
+
+    // Define the event handler function
+    function showMessage() {
+      document.getElementById("message").textContent = "You clicked the button!";
+    }
+
+    // Attach the event listener to the button
+    button.addEventListener("click", showMessage);
+  </script>
+  
+</body>
+</html>
