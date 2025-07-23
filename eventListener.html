@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Events Example</title>
+  <link rel="stylesheet" href="event-style.css" />
+</head>
+<body>
+
+  <h2>JavaScript Events Example</h2>
+
+  <button id="changeBtn">Change Box Color</button>
+
+  <div id="colorBox"></div>
+
+  <br>
+
+  <label for="nameInput">Type your name:</label>
+  <input id="nameInput" type="text" onkeyup="showName()" />
+
+  <p id="output"></p>
+
+  <script>
+    // Using document.getElementById() with addEventListener
+    const button = document.getElementById("changeBtn");
+    const box = document.getElementById("colorBox");
+
+    button.addEventListener("click", function() {
+      box.style.backgroundColor = "blue";
+    });
+
+    // Inline event handler for 'keyup'
+    function showName() {
+      const name = document.getElementById("nameInput").value;
+      document.getElementById("output").textContent = "Hello, " + name + "!";
+    }
+  </script>
+</body>
+</html>
